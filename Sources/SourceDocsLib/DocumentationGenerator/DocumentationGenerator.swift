@@ -183,18 +183,19 @@ public final class DocumentationGenerator {
         }
 
         if let substructure = dictionary[SwiftDocKey.substructure.rawValue] as? [SwiftDocDictionary] {
-            let substructureWithParent: [SwiftDocDictionary]
+            let substructureWithParents: [SwiftDocDictionary]
             if let parentName: String = dictionary.get(.name) {
-                substructureWithParent = substructure.map {
+                substructureWithParents = substructure.map {
                     var dict = $0
+                    dict.parentNames.append(contentsOf: dictionary.parentNames)
                     dict.parentNames.append(parentName)
                     return dict
                 }
             } else {
-                substructureWithParent = substructure
+                substructureWithParents = substructure
             }
 
-            process(dictionaries: substructureWithParent)
+            process(dictionaries: substructureWithParents)
         }
     }
 }
