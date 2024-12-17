@@ -10,7 +10,7 @@ import ProcessRunner
 
 class VersionCommandTests: XCTestCase {
 
-    let expectedVersion = "2.0.1"
+    let expectedVersion = "0.0.0"
 
     func testVersion() throws {
         let result = try system(command: binaryURL.path, parameters: ["version"], captureOutput: true)

@@ -17,7 +17,7 @@ extension SourceDocs {
         )
 
         func run() throws {
-            fputs("SourceDocs v\(SourceDocs.version)\n".cyan, stdout)
+            fputs("SourceDocs v\(SourceDocs.version) MB fork\n".cyan, stdout)
         }
     }
 }
