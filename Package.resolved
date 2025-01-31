@@ -30,9 +30,9 @@
       },
       {
         "package": "SourceKitten",
-        "repositoryURL": "https://github.com/SimplyDanny/SourceKitten.git",
+        "repositoryURL": "https://github.com/magicbell/SourceKitten.git",
         "state": {
-          "branch": "update-xcode",
+          "branch": "magicbell",
           "revision": "7e40065cb5d0b2be1b9dc0c84449d64415be9708",
           "version": null
         }

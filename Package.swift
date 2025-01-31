@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser", from: "1.5.0"),
-        .package(url: "https://github.com/SimplyDanny/SourceKitten.git", branch: "update-xcode"),
+        .package(url: "https://github.com/magicbell/SourceKitten.git", branch: "magicbell"),
         .package(url: "https://github.com/eneko/MarkdownGenerator.git", from: "0.4.0"),
         .package(url: "https://github.com/onevcat/Rainbow", from: "3.0.0"),
         .package(url: "https://github.com/eneko/ProcessRunner.git", from: "1.1.0")
